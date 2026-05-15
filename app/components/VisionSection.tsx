@@ -19,7 +19,7 @@ export default function VisionSection() {
       style={{
         position: "relative",
         background: "var(--black)",
-        padding: "200px 0",
+        padding: "140px 0",
         overflow: "hidden",
         borderTop: "1px solid var(--border)",
       }}
@@ -65,8 +65,8 @@ export default function VisionSection() {
               marginBottom: "48px",
             }}
           >
-            &ldquo;Nous pensons que la technologie n&rsquo;a de valeur que lorsqu&rsquo;elle
-            simplifie réellement le quotidien des équipes et des dirigeants.&rdquo;
+            &ldquo;La valeur d&rsquo;un outil, c&rsquo;est ce que les équipes
+            peuvent en faire concrètement — pas ce qu&rsquo;il promet sur le papier.&rdquo;
           </blockquote>
 
           <div

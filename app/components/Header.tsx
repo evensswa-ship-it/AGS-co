@@ -2,6 +2,9 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
+
+const LOGO_SRC = "/agslogo.png";
 
 const navLinks = [
   { label: "Terrain", href: "#problemes" },
@@ -13,6 +16,7 @@ const navLinks = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -56,17 +60,28 @@ export default function Header() {
             style={{ textDecoration: "none" }}
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
-            <span
-              style={{
-                fontFamily: "var(--f-display)",
-                fontSize: "1.1rem",
-                fontWeight: 600,
-                letterSpacing: "0.08em",
-                color: "var(--white)",
-              }}
-            >
-              AGS <span style={{ color: "var(--w50)" }}>&amp;</span> Co
-            </span>
+            {!logoError ? (
+              <Image
+                src={LOGO_SRC}
+                alt="AGS & Co"
+                width={120}
+                height={36}
+                style={{ display: "block" }}
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <span
+                style={{
+                  fontFamily: "var(--f-display)",
+                  fontSize: "1.1rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.08em",
+                  color: "var(--white)",
+                }}
+              >
+                AGS <span style={{ color: "var(--w50)" }}>&amp;</span> Co
+              </span>
+            )}
           </a>
 
           {/* Desktop nav */}

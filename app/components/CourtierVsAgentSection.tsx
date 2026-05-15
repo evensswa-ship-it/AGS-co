@@ -156,9 +156,9 @@ export default function CourtierVsAgentSection() {
                 maxWidth: "640px",
               }}
             >
-              Dans les deux cas, la maîtrise opérationnelle conditionne la
+              Dans les deux cas, l&rsquo;organisation interne conditionne la
               qualité du service, la conformité réglementaire et la capacité à
-              scaler. C&rsquo;est là qu&rsquo;AGS &amp; Co intervient.
+              se développer. C&rsquo;est là qu&rsquo;AGS &amp; Co intervient.
             </p>
           </div>
         </FadeIn>

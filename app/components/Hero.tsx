@@ -92,7 +92,7 @@ export default function Hero() {
               className="tag"
               style={{ marginBottom: "48px" }}
             >
-              Cabinet stratégique opérationnel &nbsp;·&nbsp; Assurance IARD
+              Courtiers et agents généraux &nbsp;·&nbsp; Assurance IARD
             </motion.p>
 
             {/* Headline */}
@@ -139,7 +139,7 @@ export default function Hero() {
               }}
             >
               AGS &amp; Co accompagne les courtiers et agents généraux IARD dans
-              l&rsquo;organisation, la visibilité et la fluidité de leurs opérations.
+              la structuration et le pilotage de leurs opérations.
             </motion.p>
 
             {/* CTAs */}

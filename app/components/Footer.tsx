@@ -1,6 +1,12 @@
 "use client";
 
+import { useState } from "react";
+import Image from "next/image";
+
+const LOGO_SRC = "/agslogo.png";
+
 export default function Footer() {
+  const [logoError, setLogoError] = useState(false);
   return (
     <footer
       style={{
@@ -24,18 +30,29 @@ export default function Footer() {
         >
           {/* Brand */}
           <div>
-            <p
-              style={{
-                fontFamily: "var(--f-display)",
-                fontSize: "1.3rem",
-                fontWeight: 600,
-                letterSpacing: "0.06em",
-                color: "var(--white)",
-                marginBottom: "8px",
-              }}
-            >
-              AGS &amp; Co
-            </p>
+            {!logoError ? (
+              <Image
+                src={LOGO_SRC}
+                alt="AGS & Co"
+                width={100}
+                height={30}
+                style={{ display: "block", marginBottom: "12px" }}
+                onError={() => setLogoError(true)}
+              />
+            ) : (
+              <p
+                style={{
+                  fontFamily: "var(--f-display)",
+                  fontSize: "1.3rem",
+                  fontWeight: 600,
+                  letterSpacing: "0.06em",
+                  color: "var(--white)",
+                  marginBottom: "8px",
+                }}
+              >
+                AGS &amp; Co
+              </p>
+            )}
             <p
               className="tag"
               style={{ lineHeight: 1.8 }}

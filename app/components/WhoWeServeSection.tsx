@@ -42,7 +42,7 @@ export default function WhoWeServeSection() {
                 className="display"
                 style={{ fontSize: "clamp(32px, 4vw, 56px)", marginBottom: "32px" }}
               >
-                Nous travaillons avec des structures qui ont déjà prouvé leur valeur.
+                Nous travaillons avec des cabinets en activité, pas des projets naissants.
               </h2>
               <p
                 style={{
@@ -54,10 +54,9 @@ export default function WhoWeServeSection() {
                   maxWidth: "480px",
                 }}
               >
-                Pas des cabinets qui démarrent. Des organisations qui ont grandi,
-                qui ont des équipes, des processus en place — et qui sentent que
-                quelque chose doit être mieux maîtrisé pour continuer à progresser
-                sereinement.
+                Des cabinets qui ont des équipes, un portefeuille établi, des
+                processus qui fonctionnent — et qui veulent continuer à croître
+                sans perdre le fil de leur organisation.
               </p>
             </FadeIn>
           </div>

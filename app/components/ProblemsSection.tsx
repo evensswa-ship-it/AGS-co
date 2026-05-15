@@ -38,7 +38,7 @@ export default function ProblemsSection() {
           stagger={0.07}
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(3, 1fr)",
+            gridTemplateColumns: "repeat(2, 1fr)",
             gap: "1px",
             background: "var(--border)",
             border: "1px solid var(--border)",
@@ -51,7 +51,6 @@ export default function ProblemsSection() {
                 style={{
                   background: "var(--surface)",
                   padding: "44px 40px",
-                  gridColumn: i === 6 ? "span 3" : "span 1",
                   cursor: "default",
                   transition: "background 0.35s ease",
                   height: "100%",
@@ -93,8 +92,8 @@ export default function ProblemsSection() {
               lineHeight: 1.7,
             }}
           >
-            Ces signaux ne sont pas des anomalies. Ce sont les symptômes d&rsquo;une
-            organisation qui a grandi sans avoir structuré sa maîtrise opérationnelle.
+            Ces situations ne sont pas des cas isolés. Elles apparaissent
+            systématiquement dans les cabinets qui ont grandi sans formaliser leur fonctionnement interne.
           </p>
         </FadeIn>
       </div>

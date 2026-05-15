@@ -60,7 +60,7 @@ export default function ApproachSection() {
               className="display"
               style={{ fontSize: "clamp(32px, 4vw, 52px)" }}
             >
-              Sobre. Structurée. Orientée terrain.
+              Cinq étapes, chacune sur le terrain.
             </h2>
           </FadeIn>
 

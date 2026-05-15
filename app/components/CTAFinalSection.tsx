@@ -7,9 +7,11 @@ export default function CTAFinalSection() {
   return (
     <section
       style={{
+        position: "relative",
         background: "var(--surface)",
         padding: "160px 0",
         borderTop: "1px solid var(--border)",
+        overflow: "hidden",
       }}
     >
       <div className="wrapper">
@@ -51,8 +53,7 @@ export default function CTAFinalSection() {
                 maxWidth: "480px",
               }}
             >
-              Pas de présentation commerciale. Pas de pitch. Une conversation
-              directe sur ce que vous observez dans votre organisation.
+              Une conversation directe sur votre organisation — sans argumentaire commercial.
             </p>
           </FadeIn>
 
